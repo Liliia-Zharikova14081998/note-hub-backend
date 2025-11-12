@@ -1,5 +1,4 @@
-import { Schema } from 'mongoose';
-import { model } from 'mongoose';
+import { Schema, model } from 'mongoose';
 
 const noteSchema = new Schema(
   {
@@ -22,6 +21,11 @@ const noteSchema = new Schema(
   {
     timestamps: true,
   },
+);
+
+noteSchema.index(
+  { title: "text", content: "text" },
+  { default_language: "english" }
 );
 
 export const Note = model('Note', noteSchema);
