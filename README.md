@@ -1,5 +1,7 @@
 # 📝 NoteHub Backend
 
+[![Live API Documentation](https://img.shields.io/badge/Live_API-Swagger-green?style=for-the-badge)](https://notes-app-hw-5.onrender.com)
+
 Advanced REST API for the NoteHub application. This server-side application handles secure user authentication, advanced session management, and cloud-based file storage.
 
 ## 🚀 Key Features
